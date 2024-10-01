@@ -1,0 +1,109 @@
+.secction {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.proposal-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.proposal {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px 64px 20px;
+  border-radius: 16px;
+  background: var(--green-gradient);
+
+  z-index: -5;
+}
+.proposal-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  color: var(--c-white);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.proposal-cards {
+  position: relative;
+  z-index: 1;
+}
+.proposal-cards-holder {
+  padding: 40px 20px;
+  border-radius: 16px;
+  background: var(--c-white);
+  animation: fadeIn 1s ease-in-out;
+}
+.proposal-cards-holder::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  top: 0;
+  left: 0;
+  transform: rotate(11deg);
+  background: var(--c-white);
+  opacity: 50%;
+  z-index: -1;
+}
+.proposal-cards-holder::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  top: 0;
+  left: 0;
+  transform: rotate(-9deg);
+  background: var(--c-light-green);
+  z-index: -1;
+}
+
+.proposal-cards-list {
+  margin-bottom: 20px;
+}
+.proposal-cards-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.proposal-cards-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  background-color: var(--c-green);
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-image: url(../../img/proposals/icon.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.proposal-cards-item-desc {
+  color: var(--c-black);
+  width: 227px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+}
+
+.proposal-cards-title {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  color: var(--c-black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
