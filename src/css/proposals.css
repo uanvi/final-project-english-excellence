@@ -1,4 +1,4 @@
-.secction {
+.section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -15,18 +15,32 @@
   padding: 40px 20px 64px 20px;
   border-radius: 16px;
   background: var(--green-gradient);
-
   z-index: -5;
 }
-.proposal-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 40px;
-  color: var(--c-white);
-  margin-bottom: 20px;
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .proposal-section {
+    min-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .proposal {
+    min-width: 704px;
+    padding: 64px 18px 92px 18px;
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal-section {
+    min-width: 1152px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .proposal {
+    min-width: 1152px;
+    padding: 64px 64px 140px 64px;
+  }
 }
 
 .proposal-cards {
@@ -37,8 +51,8 @@
   padding: 40px 20px;
   border-radius: 16px;
   background: var(--c-white);
-  animation: fadeIn 1s ease-in-out;
 }
+
 .proposal-cards-holder::before {
   content: '';
   position: absolute;
@@ -64,6 +78,50 @@
   background: var(--c-light-green);
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .proposal-cards-holder {
+    border-radius: 30px;
+    padding: 64px 32px;
+    background-image: url(../../img/proposals/books.png);
+    background-position: 503px 173px;
+    background-size: 214px 263px;
+    background-repeat: no-repeat;
+  }
+
+  .proposal-cards-holder::before {
+    border-radius: 30px;
+    transform: rotate(-9.86deg);
+  }
+
+  .proposal-cards-holder::after {
+    border-radius: 30px;
+    transform: rotate(10.65deg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal-cards-holder {
+    padding-left: 64px;
+    padding-right: 64px;
+    background-position: 810px 128px;
+  }
+
+  .proposal-cards-holder::before {
+    transform: rotate(-8deg);
+  }
+
+  .proposal-cards-holder::after {
+    transform: rotate(11deg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .proposal-cards-holder {
+    background-image: url(../../img/proposals/books-2x.png);
+  }
+}
 
 .proposal-cards-list {
   margin-bottom: 20px;
@@ -72,8 +130,8 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  margin-bottom: 16px;
 }
-
 .proposal-cards-item::before {
   content: '';
   width: 20px;
@@ -88,7 +146,34 @@
   background-repeat: no-repeat;
   background-size: 20px;
 }
+@media screen and (min-width: 768px) {
+  .proposal-cards-list {
+    margin-bottom: 32px;
+  }
 
+  .proposal-cards-item {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal-cards-list {
+    margin-bottom: 40px;
+  }
+}
+
+.proposal-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  color: var(--c-white);
+  margin-bottom: 65px;
+  text-align: left;
+}
+.accent-title {
+  color: var(--c-accent-green);
+}
 .proposal-cards-item-desc {
   color: var(--c-black);
   width: 227px;
@@ -106,6 +191,48 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
+}
+.proposal-card-item-desc {
+  color: var(--c-black);
+  width: 227px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 768px) {
+  .proposal-title {
+    max-width: 640px;
+    font-size: 60px;
+    line-height: 1.17;
+    margin-bottom: 84px;
+  }
+  .proposal-cards-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+  }
+
+  .proposal-list {
+    margin-bottom: 32px;
+  }
+  .proposal-card-item-desc {
+    width: 448px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal-cards-title {
+    margin-bottom: 40px;
+  }
+  .proposal-title {
+    max-width: 776px;
+    margin-bottom: 133px;
+  }
+  .proposal-card-item-desc {
+    width: 654px;
+  }
 }
 
 .proposal-btn {
@@ -127,4 +254,15 @@
 
 .proposal-btn:hover {
   background: #3da95e;
+}
+
+@media screen and (min-width: 768px) {
+  .proposal-btn {
+    display: inline-flex;
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+@media screen and (min-width: 1280px) {
 }
