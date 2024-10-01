@@ -9,6 +9,14 @@
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
 
+  --c-green: #4dc274;
+  --c-dark-green: #38ae5f;
+  --c-light-green: #d4fde1;
+  --c-black: #121417;
+  --c-white: #ffffff;
+
+  --green-gradient: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
