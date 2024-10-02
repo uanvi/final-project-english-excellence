@@ -44,3 +44,32 @@
     border-color: black;
   }
 }
+
+@keyframes rotate-neg {
+  0% {
+    transform: translateX(0vw) translateY(0vh) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0vw) translateY(0vh) rotate(-10deg);
+  }
+
+  100% {
+    transform: translateX(0vw) translateY(0vh) rotate(-5deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-pos {
+  0% {
+    transform: translateX(0vw) translateY(0vh) rotate(5deg);
+  }
+
+  50% {
+    transform: translateX(0vw) translateY(0vh) rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(0vw) translateY(0vh) rotate(5deg);
+  }
+}
