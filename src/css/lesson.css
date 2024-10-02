@@ -1,0 +1,198 @@
+:root {
+    --black: #121417;
+    --green: #4DC274;
+    --light-green: #bee8cc;
+    --white: #fff;
+    --font-family: "Manrope", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+/* Секція уроків */
+.lessons {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.lessons-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lessons-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.underline-lessons {
+    display: block;
+    position: absolute;
+    left: 60%;
+    bottom: -1px;
+    transform: translateX(-38%);
+    width: 63%;
+    height: 20px;
+    background-color: var(--light-green);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.lessons-text {
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+    margin-top: 16px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 665px;
+}
+
+/* Контейнер для планів */
+.plans-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+}
+
+/* Стили для плану */
+.plan-item {
+    border: 1px solid var(--green);
+    border-radius: 30px;
+    background: var(--white);
+    padding: 20px;
+    margin: 20px;
+    width: 320px;
+    height: 404px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan-item.standard {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/* клас для білих текстів */
+.white-text {
+    color: var(--white);
+}
+
+/* Відступ для заголовків планів */
+.plan-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.plan-price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 137%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.plan-text {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+/* Стилі для кнопок */
+.plan-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    padding: 16px 39px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+.white-button {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* Білий контур тільки для кнопки стандартного плану */
+    padding: 16px 39px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.plan-button:hover {
+    background-color: #3aa45b;
+}
+
+/* Гумова верстка для мобільних пристроїв (320px - 374px) */
+@media (max-width: 374px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Адаптивність для мобільних пристроїв від 375px */
+@media (min-width: 375px) and (max-width: 767px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+/* Адаптивність для планшетів від 768px */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .plans {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .plan {
+        width: 45%;
+        margin: 20px 0;
+    }
+}
+
+/* Адаптивність для десктопів від 1280px */
+@media (min-width: 1280px) {
+    .plans {
+        justify-content: space-between;
+    }
+}
