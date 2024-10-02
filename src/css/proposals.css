@@ -65,6 +65,7 @@
   background: var(--c-white);
   opacity: 50%;
   z-index: -1;
+  animation: rotate-pos 4s ease-in-out infinite;
 }
 .proposal-cards-holder::after {
   content: '';
@@ -77,6 +78,7 @@
   transform: rotate(-9deg);
   background: var(--c-light-green);
   z-index: -1;
+  animation: rotate-neg 4s ease-in-out infinite;
 }
 @media screen and (min-width: 768px) {
   .proposal-cards-holder {
