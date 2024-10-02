@@ -82,7 +82,7 @@
   .proposal-cards-holder {
     border-radius: 30px;
     padding: 64px 32px;
-    background-image: url(img/proposals/books.png);
+    background-image: url(./img/proposals/books.png);
     background-position: 503px 173px;
     background-size: 214px 263px;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .proposal-cards-holder {
-    background-image: url(../../img/proposals/books-2x.png);
+    background-image: url(./img/proposals/books-2x.png);
   }
 }
 
@@ -141,7 +141,7 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 50%;
-  background-image: url(../../img/proposals/icon.svg);
+  background-image: url(./img/proposals/icon.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 20px;
