@@ -1,110 +1,122 @@
 <section class="application section">
   <div class="container">
-    <h2 class="feedback_header">Leave an <span class="underline-span">application</span></h2>
+    <h2 class="feedback_header">
+      Leave an <span class="underline-span">application</span>
+    </h2>
     <p class="feedback_description">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
     <div class="feedback_form_container">
       <div class="feedback_advertising">
-        <img
-          class="feedback_advertising_image"
-          srcset="
-            ../img/application/leave_in_application_girl.jpg 1x,
-            ../img/application/leave_in_application_girl.jpg 2x
-          "
-          alt="leave an application advertising"
-          width="597"
-          height="537"
-        /> <div class="kek">
-        <h3 class="feedback_advertising_header">1000</h3>
-        <p class="feedback_advertising_description">
-          of our online English language lessons! This journey has been full
-          of discovery, growth and unforgettable moments, and we are happy
-          to share this joyful event with you.
-        </p>
-      </div>
+        <div class="feedback_image_wrapper">
+          <img
+            class="feedback_advertising_image"
+            src="../img/application/leave_in_application_girl.jpg"
+            alt="leave an application advertising"
+            width="597"
+            height="537"
+          />
+        </div>
+        <div class="feedback_desc_wrapper">
+          <h3 class="feedback_advertising_header">1000</h3>
+          <p class="feedback_advertising_description">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
       </div>
       <form class="feedback_form">
-        <div class="feedback_info_container">
-          <label class="feedback_info_label">
-            <input
-              class="feedback_info_input"
-              type="text"
-              name="name"
-              placeholder="Name"
-            />
-          </label>
-          <label class="feedback_info_label">
-            <input
-              class="feedback_info_input"
-              type="email"
-              name="email_address"
-              placeholder="Email"
-            />
-          </label>
-          <label class="feedback_info_label">
-            <input
-              class="feedback_info_input"
-              type="tel"
-              name="tel"
-              placeholder="Phone"
-            />
-          </label>
-          <label class="feedback_info_label">
-            <textarea
-              class="feedback_info_textarea"
-              name="feedback"
-              rows="5"
-              placeholder="Comment"
-            ></textarea>
-          </label>
-        </div>
-        <div class="feedback_radio">
-          <p class="feedback_radio_title">Choose a teacher</p>
-          <div class="feedback_radio_container">
-            <label class="feedback_radio_label">
+        <fieldset>
+          <div class="feedback_info_container">
+            <label class="feedback_info_label">
               <input
-                class="feedback_radio_input"
-                type="radio"
-                name="teacher"
-                value="Maria"
-                checked
+                class="feedback_info_input"
+                type="text"
+                name="name"
+                placeholder="Name"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє' -]+" 
+                required
               />
-              Maria
             </label>
-            <label class="feedback_radio_label">
+            <label class="feedback_info_label">
               <input
-                class="feedback_radio_input"
-                type="radio"
-                name="teacher"
-                value="Artem"
+                class="feedback_info_input"
+                type="email"
+                name="email_address"
+                placeholder="Email"
+                required
               />
-              Artem
             </label>
-            <label class="feedback_radio_label">
+            <label class="feedback_info_label">
               <input
-                class="feedback_radio_input"
-                type="radio"
-                name="teacher"
-                value="Ilona"
+                class="feedback_info_input"
+                type="tel"
+                name="tel"
+                placeholder="Phone"
+                pattern="^\+?[0-9\s()-]{7,15}$"
+                required
               />
-              Ilona
             </label>
-            <label class="feedback_radio_label">
-              <input
-                class="feedback_radio_input"
-                type="radio"
-                name="teacher"
-                value="Volodymyr"
-              />
-              Volodymyr
+            <label class="feedback_info_label">
+              <textarea
+                class="feedback_info_textarea"
+                name="feedback"
+                rows="5"
+                placeholder="Comment"
+              ></textarea>
             </label>
           </div>
-        </div>
+        </fieldset>
+        <fieldset>
+          <div class="feedback_radio">
+            <p class="feedback_radio_title">Choose a teacher</p>
+            <div class="feedback_radio_container">
+              <label class="feedback_radio_label">
+                <input
+                  class="feedback_radio_input"
+                  type="radio"
+                  name="teacher"
+                  value="Maria"
+                  checked
+                />
+                Maria
+              </label>
+              <label class="feedback_radio_label">
+                <input
+                  class="feedback_radio_input"
+                  type="radio"
+                  name="teacher"
+                  value="Artem"
+                />
+                Artem
+              </label>
+              <label class="feedback_radio_label">
+                <input
+                  class="feedback_radio_input"
+                  type="radio"
+                  name="teacher"
+                  value="Ilona"
+                />
+                Ilona
+              </label>
+              <label class="feedback_radio_label">
+                <input
+                  class="feedback_radio_input"
+                  type="radio"
+                  name="teacher"
+                  value="Volodymyr"
+                />
+                Volodymyr
+              </label>
+            </div>
+          </div>
+        </fieldset>
         <button class="feedback_button" type="submit">Send</button>
         <p class="feedback_privacy">
-          By clicking on “Send” button, you agree to our <a class="feedback_privacy_link" href="">Privacy Policy</a> ,<br />
+          By clicking on “Send” button, you agree to our
+          <a class="feedback_privacy_link" href="">Privacy Policy</a> ,<br />
           and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
