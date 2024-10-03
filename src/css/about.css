@@ -10,22 +10,6 @@
   color: var(--c-black);
   margin-bottom: 16px;
 }
-.about-title-part {
-  position: relative;
-}
-.about-title-part::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateY(-20%);
-  z-index: -1;
-  display: block;
-  height: 12px;
-  border-radius: 8px;
-  background-color: #bee8cc;
-  width: 100%;
-}
 
 .about-text {
   font-size: 14px;
@@ -94,9 +78,7 @@
     font-size: 40px;
     line-height: 1.2;
   }
-  .about-title-part::after {
-    height: 20px;
-  }
+
   .about-text {
     font-size: 18px;
     line-height: 1.67;
