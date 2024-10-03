@@ -6,12 +6,12 @@ document.querySelector('.feedback_form').addEventListener('submit', function(eve
     const phonePattern = /^\+?[0-9\s()-]{7,15}$/;
   
     if (!namePattern.test(nameInput.value)) {
-      alert('Ім\'я повинно містити лише букви.');
+      alert('The name should contain only letters.');
       event.preventDefault(); 
     }
   
     if (!phonePattern.test(phoneInput.value)) {
-      alert('Будь ласка, введіть коректний номер телефону.');
+      alert('Please enter a valid phone number.');
       event.preventDefault(); 
     }
   });
