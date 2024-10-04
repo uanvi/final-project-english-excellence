@@ -3,10 +3,16 @@
       openModalBtn: document.querySelector('[data-menu-open]'),
       closeModalBtn: document.querySelector('[data-menu-close]'),
       modal: document.querySelector('[data-menu]'),
+      navLinks: document.querySelectorAll('.burger-nav-item-link'),
     };
   
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.navLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        toggleModal();
+      });
+    });
   
     function toggleModal() {
       refs.modal.classList.toggle('is-open');
@@ -30,4 +36,3 @@ document.querySelector('.feedback_form').addEventListener('submit', function(eve
       event.preventDefault(); 
     }
   });
-
