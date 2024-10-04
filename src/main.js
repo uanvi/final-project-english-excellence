@@ -1,3 +1,18 @@
+(() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-menu-open]'),
+      closeModalBtn: document.querySelector('[data-menu-close]'),
+      modal: document.querySelector('[data-menu]'),
+    };
+  
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle('is-open');
+      document.body.classList.toggle('no-scroll');
+    }
+  })();
 document.querySelector('.feedback_form').addEventListener('submit', function(event) {
     const nameInput = document.querySelector('input[name="name"]');
     const phoneInput = document.querySelector('input[name="tel"]');
