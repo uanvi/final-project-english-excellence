@@ -71,8 +71,7 @@
     display: block;
   }
 }
-
-@media (min-width: 1280x) {
+@media (min-width: 1280px) {
   .reviwer-item {
     display: block;
   }

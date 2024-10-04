@@ -115,6 +115,7 @@
   }
   .about-list-box {
     display: flex;
+    justify-content: flex-start;
     gap: 32px;
   }
   .about-list {
@@ -122,6 +123,6 @@
   }
   .about-img-box {
     width: 310px;
-    height: auto;
+    height: 352px;
   }
 }

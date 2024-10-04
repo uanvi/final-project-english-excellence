@@ -1,10 +1,5 @@
 /* --------- Lessons Section --------- */
 /* Styling for the title and description of the lessons section */
-.lessons {
-  text-align: center;
-  padding: 80px 0;
-}
-
 .lessons-title {
   font-size: 32px;
   line-height: 112%;
@@ -167,10 +162,6 @@
     margin-bottom: 20px;
   }
 
-  .lessons {
-    padding: 40px 0;
-  }
-
   .lessons-title {
     font-size: 28px;
   }
@@ -192,10 +183,6 @@
 /* --------- Wide Screen Adaptation --------- */
 /* Styles for devices with screen width from 1280px */
 @media only screen and (min-width: 1280px) {
-  .lessons {
-    padding: 96px 0;
-  }
-
   .lessons-text {
     max-width: 709px;
     margin-left: auto;
