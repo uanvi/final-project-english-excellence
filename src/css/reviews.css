@@ -1,17 +1,6 @@
 .reviews {
-  padding-bottom: 150px;
 }
 .reviews-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: -0.02em;
-
-  color: #121417;
-
   margin-bottom: 16px;
 }
 .reviews-sub-title {
