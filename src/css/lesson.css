@@ -1,0 +1,213 @@
+/* --------- Lessons Section --------- */
+/* Styling for the title and description of the lessons section */
+.lessons {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.lessons-title {
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--c-black);
+  /* Use black color */
+  margin-bottom: 16px;
+}
+
+.lessons-text {
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  /* Semi-transparent black color for the text */
+  margin-bottom: 40px;
+}
+
+/* --------- Plan Container --------- */
+/* Container for positioning the plans in a list format */
+.plan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+}
+
+/* --------- Plan Styles --------- */
+/* Styling for each plan, each element has fixed sizes and padding */
+.plan-item {
+  border: 1px solid var(--c-green);
+  border-radius: 30px;
+  background: var(--c-white);
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.plan-item.standard {
+  background-color: var(--c-green);
+  color: var(--c-white);
+}
+
+/* Style for white texts, used in the standard plan */
+.white-text {
+  color: var(--c-white);
+}
+
+/* Plan Title */
+.plan-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Plan Price */
+.plan-price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Plan Description Text */
+.plan-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  margin-bottom: 32px;
+}
+
+/* --------- Button Styles --------- */
+/* Button inside the plan */
+.plan-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156%;
+  padding: 16px 39px;
+  background-color: var(--c-green);
+  color: var(--c-white);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 32px;
+  width: 256px;
+  height: 60px;
+}
+
+/* White button for special cases */
+.white-button {
+  background-color: transparent;
+  color: var(--c-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 16px 39px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* --------- Tablet Adaptation --------- */
+@media only screen and (max-width: 1024px) {
+  .plan-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .plan-item {
+    width: 336px;
+    margin-bottom: 32px;
+  }
+
+  /* Ensure the "Individual" plan is positioned below the "Practice" plan */
+  .plan-item:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .lessons-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+  }
+}
+
+/* --------- Mobile Version Adjustment (Screens up to 767px) --------- */
+@media only screen and (max-width: 767px) {
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 335px;
+    margin: 0 auto;
+  }
+
+  .plan-item {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+  }
+
+  .plan-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .lessons {
+    padding: 40px 0;
+  }
+
+  .lessons-title {
+    font-size: 28px;
+  }
+
+  .plan-text {
+    margin-bottom: 16px;
+  }
+
+  .plan-button {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .plan-item.standard {
+    padding-right: 32px;
+  }
+}
+
+/* --------- Wide Screen Adaptation --------- */
+/* Styles for devices with screen width from 1280px */
+@media only screen and (min-width: 1280px) {
+  .lessons {
+    padding: 96px 0;
+  }
+
+  .lessons-text {
+    max-width: 709px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .plan-list {
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .plan-item {
+    box-sizing: content-box;
+  }
+}

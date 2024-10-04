@@ -35,3 +35,11 @@
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.pulse-scale {
+  animation: pulse-scale 2s infinite;
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
