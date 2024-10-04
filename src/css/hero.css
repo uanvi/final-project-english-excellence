@@ -1,0 +1,118 @@
+.hero-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 709px;
+
+  border-radius: 16px;
+  background-image: url('../img/hero-background/hero-bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-mobile@2x.jpg');
+  }
+}
+@media (min-width: 768px) {
+  .hero-container {
+    background-image: url('../img/hero-background/hero-bg-tab.jpg');
+    justify-content: center;
+    height: 857px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-container {
+    background-image: url('../img/hero-background/hero-bg-desktop.jpg');
+    height: 629px;
+  }
+}
+.title-one {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 105%;
+
+  text-align: left;
+  width: 295px;
+  margin-bottom: 36px;
+
+  color: var(--c-white);
+}
+
+@media (min-width: 768px) {
+  .title-one {
+    width: 488px;
+  }
+  .hero-btn {
+    width: 306px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title-one {
+    width: 564px;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 1280px) {
+  .main-button {
+    top: 602px;
+    left: 64px;
+    width: 306px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-button {
+    top: 585px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 295px;
+    height: 52px;
+  }
+} */
+
+/* .scroll-icon-link {
+  position: absolute;
+  bottom: 32px;
+  right: 64px;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.scroll-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .scroll-icon {
+    bottom: 14px;
+    right: 34px;
+    width: 38px;
+    height: 38px;
+  }
+} */
