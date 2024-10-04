@@ -4,7 +4,7 @@
   height: 709px;
 
   border-radius: 16px;
-  background-image: url('./img/hero-background/hero-bg-mobile.jpg');
+  background-image: url('../img/hero-background/hero-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,12 +18,12 @@
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: url('./img/hero/hero-bg-mobile@2x.jpg');
+    background-image: url('../img/hero/hero-bg-mobile@2x.jpg');
   }
 }
 @media (min-width: 768px) {
   .hero-container {
-    background-image: url('./img/hero-background/hero-bg-tab.jpg');
+    background-image: url('../img/hero-background/hero-bg-tab.jpg');
     justify-content: center;
     height: 857px;
   }
@@ -31,7 +31,7 @@
 
 @media (min-width: 1280px) {
   .hero-container {
-    background-image: url('./img/hero-background/hero-bg-desktop.jpg');
+    background-image: url('../img/hero-background/hero-bg-desktop.jpg');
     height: 629px;
   }
 }
