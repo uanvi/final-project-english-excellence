@@ -1,18 +1,14 @@
 .teachers {
-  margin-bottom: 150px;
-  margin-top: 110px;
+  /* margin-bottom: 150px;
+  margin-top: 110px; */
 }
 .teachers-title {
-  font-family: 'Manrope', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  text-align: center;
+  font-size: 32px;
+  line-height: 112%;
   letter-spacing: -0.02em;
+  text-align: center;
 
-  color: #121417;
-
+  color: var(--c-black);
   margin-bottom: 16px;
 }
 .teachers-sub-title {
@@ -84,13 +80,13 @@
 }
 
 .teacher-red {
-  background: #D4B2AF;
+  background: #d4b2af;
 }
 .teacher-yellow {
-  background: #DFCC9F;
+  background: #dfcc9f;
 }
 .teacher-green {
-  background: #D1DFC3;
+  background: #d1dfc3;
 }
 
 .teacher-info {
@@ -110,10 +106,9 @@
 
   letter-spacing: -0.02em;
 
-  color: #121417;
+  color: var(--c-black);
 }
 .teacher-text {
-
   left: 32px;
   top: 330px;
 
