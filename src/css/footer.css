@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-
 
 .footer {
   position: relative;
   width: 100%;
-  background: #4dc274; 
+  background: #4dc274;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -21,7 +20,7 @@
 }
 
 .social-icon,
-.social-icon-footer{
+.social-icon-footer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -39,7 +38,6 @@
   flex-wrap: wrap;
   fill: #ffffff;
 }
-
 
 .social-icon__item,
 .menu__item {
@@ -85,7 +83,7 @@
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("wave_green.png");
+  background: url('../img/footer/wave_green.png');
   background-size: 1000px 100px;
 }
 
