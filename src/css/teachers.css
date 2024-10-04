@@ -1,0 +1,124 @@
+.teachers {
+  /* margin-bottom: 150px;
+  margin-top: 110px; */
+}
+.teachers-title {
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: var(--c-black);
+  margin-bottom: 16px;
+}
+.teachers-sub-title {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+
+  text-align: center;
+
+  color: #12141780;
+
+  /* margin-bottom: 64px; */
+  max-width: 647px;
+  margin: 0 auto 64px;
+}
+
+.teacher-block {
+  position: relative;
+  margin-left: auto;
+}
+
+.teachers-list {
+  display: grid;
+  gap: 32px;
+  margin-top: 64px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+  .teachers-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .teachers-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .teachers-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.teacher-item {
+}
+
+.teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*flex-direction: row;*/
+  /*background-color: var(--c-green);*/
+  margin-bottom: 8px;
+  gap: 16px;
+}
+
+.teacher-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.teacher-red {
+  background: #d4b2af;
+}
+.teacher-yellow {
+  background: #dfcc9f;
+}
+.teacher-green {
+  background: #d1dfc3;
+}
+
+.teacher-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 2px;
+}
+.teacher-name {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.02em;
+
+  color: var(--c-black);
+}
+.teacher-text {
+  left: 32px;
+  top: 330px;
+
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #12141780;
+  margin: 0 auto;
+}

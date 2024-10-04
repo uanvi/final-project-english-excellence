@@ -7,12 +7,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  margin-bottom: 80px;
+}
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .section {
+    margin-bottom: 100px;
   }
 }
 /* Styles for Desktop devices */
@@ -21,5 +27,8 @@
     max-width: 1152px;
     padding-left: 64px;
     padding-right: 64px;
+  }
+  .section {
+    margin-bottom: 150px;
   }
 }
