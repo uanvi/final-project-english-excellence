@@ -1,0 +1,149 @@
+.hero {
+  background-image: url('../img/hero-background/hero-bg-desktop.jpg');
+  background-size: 1152px 629px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: left;
+  width: 1152px;
+  height: 629px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-image: url('../img/hero-background/hero-bg-tab.jpg');
+    background-size: 704px 857px;
+    height: 857px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background-image: url('../img/hero-background/hero-bg-mobile.jpg');
+    background-size: 335px 709px;
+    height: 709px;
+    padding: 60px 10px;
+  }
+}
+
+.title-one {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Manrope', sans-serif;
+  position: absolute;
+  top: 164px;
+  left: 64px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-one {
+    top: 260px;
+    left: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-one {
+    top: 425px;
+    left: 20px;
+  }
+}
+
+.highlight {
+  color: #bee8cc;
+}
+
+.main-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+}
+
+.main-button:hover {
+  background-color: #38ae5f;
+}
+
+.button-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Кнопка для Десктопу */
+.main-button {
+  width: 306px;
+  height: 60px;
+  bottom: 163px;
+  left: 64px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Кнопка для Планшету */
+  .main-button {
+    width: 306px;
+    height: 60px;
+    bottom: 295px;
+    left: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Кнопка для Мобільного */
+  .main-button {
+    width: 295px;
+    height: 52px;
+    bottom: 72px;
+    left: 20px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/hero-background/icon-scroll.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .scroll-icon {
+    bottom: 32px;
+    right: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-icon {
+    bottom: 14px;
+    right: 14px;
+  }
+}
