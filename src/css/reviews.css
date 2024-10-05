@@ -4,17 +4,6 @@
   margin-bottom: 16px;
 }
 .reviews-sub-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-
-  text-align: center;
-
-  color: rgba(18, 20, 23, 0.5);
-
-  /* margin-bottom: 64px; */
   max-width: 647px;
   margin-top: 0;
   margin-right: auto;

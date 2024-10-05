@@ -1,21 +1,10 @@
 /* --------- Lessons Section --------- */
 /* Styling for the title and description of the lessons section */
 .lessons-title {
-  font-size: 32px;
-  line-height: 112%;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--c-black);
-  /* Use black color */
   margin-bottom: 16px;
 }
 
 .lessons-text {
-  font-size: 14px;
-  line-height: 171%;
-  text-align: center;
-  color: rgba(18, 20, 23, 0.5);
-  /* Semi-transparent black color for the text */
   margin-bottom: 40px;
 }
 
@@ -133,13 +122,6 @@
   .plan-item:nth-child(3) {
     grid-column: 1 / 2;
   }
-
-  .lessons-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 167%;
-    text-align: center;
-  }
 }
 
 /* --------- Mobile Version Adjustment (Screens up to 767px) --------- */
@@ -160,10 +142,6 @@
 
   .plan-item:not(:last-child) {
     margin-bottom: 20px;
-  }
-
-  .lessons-title {
-    font-size: 28px;
   }
 
   .plan-text {
