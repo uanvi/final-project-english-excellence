@@ -8,13 +8,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-
   padding-bottom: 36px;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  position: relative;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
@@ -66,55 +66,32 @@
   }
 }
 
-/* @media (min-width: 768px) and (max-width: 1280px) {
-  .main-button {
-    top: 602px;
-    left: 64px;
-    width: 306px;
-    height: 60px;
-  }
-}
+.scroll-link {
+  position: fixed;
+  width: 38px;
+  height: 38px;
 
-@media (max-width: 767px) {
-  .main-button {
-    top: 585px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 295px;
-    height: 52px;
-  }
-} */
-
-/* .scroll-icon-link {
-  position: absolute;
-  bottom: 32px;
-  right: 64px;
-  width: 48px;
-  height: 48px;
-  background-color: #fff;
-  border-radius: 50%;
+  bottom: 16px;
+  right: 16px;
+  background-color: var(--c-white);
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  z-index: 1000;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 100;
 }
 
-.scroll-icon img {
-  width: 24px;
-  height: 24px;
-}
-
-.scroll-icon:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 767px) {
-  .scroll-icon {
-    bottom: 14px;
-    right: 34px;
-    width: 38px;
-    height: 38px;
+@media only screen and (min-width: 768px) {
+  .scroll-link {
+    width: 48px;
+    height: 48px;
   }
-} */
+}
+
+.scroll-link:hover {
+  background-color: var(--c-accent-green);
+}

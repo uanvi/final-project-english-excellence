@@ -35,4 +35,15 @@ document.querySelector('.feedback_form').addEventListener('submit', function(eve
       alert('Please enter a valid phone number.');
       event.preventDefault(); 
     }
-  });
+});
+  
+document.addEventListener('scroll', function () {
+  const anchor = document.querySelector('.scroll-link');
+  if (window.scrollY === 0) {
+    anchor.style.transform = 'rotate(0deg)';
+    anchor.href = '#footer';
+  } else {
+    anchor.style.transform = 'rotate(180deg)';
+    anchor.href = '#header';
+  }
+});
