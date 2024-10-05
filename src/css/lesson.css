@@ -37,9 +37,12 @@
   color: var(--c-white);
 }
 
+.white-text-title {
+  color: var(--c-white);
+}
 /* Style for white texts, used in the standard plan */
 .white-text {
-  color: var(--c-white);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Plan Title */
@@ -47,12 +50,16 @@
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 16px;
-  margin-top: 32px;
+  /* margin-top: 32px; */
   line-height: 120%;
   letter-spacing: -0.02em;
   text-align: center;
 }
-
+.plan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 /* Plan Price */
 .plan-price {
   font-family: var(--font-family);
@@ -61,7 +68,6 @@
   line-height: 137%;
   letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 /* Plan Description Text */
@@ -72,7 +78,6 @@
   line-height: 150%;
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
-  margin-bottom: 32px;
 }
 
 /* --------- Button Styles --------- */
@@ -80,7 +85,7 @@
 .plan-button {
   font-weight: 500;
   font-size: 14px;
-  line-height: 156%;
+  line-height: 171%;
   padding: 16px 39px;
   background-color: var(--c-green);
   color: var(--c-white);
@@ -122,6 +127,10 @@
   .plan-item:nth-child(3) {
     grid-column: 1 / 2;
   }
+
+  .white-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 /* --------- Mobile Version Adjustment (Screens up to 767px) --------- */
@@ -145,7 +154,8 @@
   }
 
   .plan-text {
-    margin-bottom: 16px;
+    line-height: 171%;
+    font-size: 14px;
   }
 
   .plan-button {
@@ -155,6 +165,10 @@
 
   .plan-item.standard {
     padding-right: 32px;
+  }
+
+  .white-text {
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
