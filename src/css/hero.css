@@ -16,9 +16,24 @@
 
   position: relative;
 }
+@supports (
+  background-image: url('../img/hero-background/hero-bg-mobile.webp')
+) {
+  .hero-container {
+    background-image: url('../img/hero-background/hero-bg-mobile.webp');
+  }
+}
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: url('../img/hero/hero-bg-mobile@2x.jpg');
+    background-image: url('../img/hero/hero-bg-mobile@2.jpg');
+  }
+
+  @supports (
+    background-image: url('../img/hero-background/hero-bg-mobile@2.webp')
+  ) {
+    .hero-container {
+      background-image: url('../img/hero-background/hero-bg-mobile@2.webp');
+    }
   }
 }
 @media (min-width: 768px) {
@@ -27,12 +42,54 @@
     justify-content: center;
     height: 857px;
   }
+
+  @supports (background-image: url('../img/hero-background/hero-bg-tab.webp')) {
+    .hero-container {
+      background-image: url('../img/hero-background/hero-bg-tab.webp');
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/hero/hero-bg-tab@2.jpg');
+    }
+
+    @supports (
+      background-image: url('../img/hero-background/hero-bg-tab@2.webp')
+    ) {
+      .hero-container {
+        background-image: url('../img/hero-background/hero-bg-tab@2.webp');
+      }
+    }
+  }
 }
 
 @media (min-width: 1280px) {
   .hero-container {
     background-image: url('../img/hero-background/hero-bg-desktop.jpg');
     height: 629px;
+  }
+
+  @supports (
+    background-image: url('../img/hero-background/hero-bg-desktop.webp')
+  ) {
+    .hero-container {
+      background-image: url('../img/hero-background/hero-bg-desktop.webp');
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/hero/hero-bg-desktop@2.jpg');
+    }
+
+    @supports (
+      background-image: url('../img/hero-background/hero-bg-desktop@2.webp')
+    ) {
+      .hero-container {
+        background-image: url('../img/hero-background/hero-bg-desktop@2.webp');
+      }
+    }
   }
 }
 .title-one {
