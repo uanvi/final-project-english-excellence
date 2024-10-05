@@ -75,11 +75,14 @@ fieldset {
 }
 
 .feedback_advertising_description {
+  font-family: 'Manrope';
+  font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 150%;
   text-align: center;
 
-  color: var(--c-white);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .feedback_header {
