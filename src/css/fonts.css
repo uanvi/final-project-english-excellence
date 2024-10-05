@@ -1,3 +1,21 @@
+.main-title {
+  /* Heading */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 105%;
+
+  color: var(--c-white);
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 60px;
+    line-height: 117%;
+  }
+}
+
 .title {
   font-family: 'Manrope';
   font-style: normal;
