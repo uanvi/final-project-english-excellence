@@ -36,15 +36,17 @@
   }
 }
 .title-one {
+  text-align: left;
+  width: 300px;
+  margin-bottom: 36px;
+}
+
+.hero-btn {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 105%;
-
-  text-align: left;
-  width: 295px;
-  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 156%;
 
   color: var(--c-white);
 }

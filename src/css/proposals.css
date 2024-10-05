@@ -159,12 +159,6 @@
 }
 
 .proposal-title {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 40px;
-  color: var(--c-white);
   margin-bottom: 65px;
   text-align: left;
 }
@@ -200,8 +194,6 @@
 @media screen and (min-width: 768px) {
   .proposal-title {
     max-width: 640px;
-    font-size: 60px;
-    line-height: 1.17;
     margin-bottom: 84px;
   }
   .proposal-cards-title {
