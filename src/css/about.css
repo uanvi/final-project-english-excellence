@@ -3,19 +3,10 @@
 }
 
 .about-title {
-  font-size: 32px;
-  line-height: 112%;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--c-black);
   margin-bottom: 16px;
 }
 
 .about-text {
-  font-size: 14px;
-  line-height: 171%;
-  text-align: center;
-  color: rgba(18, 20, 23, 0.5);
   margin-bottom: 40px;
 }
 .about-list {
@@ -74,14 +65,8 @@
   .about {
     /* padding: 100px 0; */
   }
-  .about-title {
-    font-size: 40px;
-    line-height: 1.2;
-  }
 
   .about-text {
-    font-size: 18px;
-    line-height: 1.67;
     margin-bottom: 64px;
   }
   .about-list {

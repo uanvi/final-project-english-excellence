@@ -3,26 +3,9 @@
   margin-top: 110px; */
 }
 .teachers-title {
-  font-size: 32px;
-  line-height: 112%;
-  letter-spacing: -0.02em;
-  text-align: center;
-
-  color: var(--c-black);
   margin-bottom: 16px;
 }
 .teachers-sub-title {
-  font-family: 'Manrope', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-
-  text-align: center;
-
-  color: #12141780;
-
-  /* margin-bottom: 64px; */
   max-width: 647px;
   margin: 0 auto 64px;
 }
