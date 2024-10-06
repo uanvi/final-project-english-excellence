@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 .section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -18,7 +18,7 @@
     padding-right: 32px;
   }
   .section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 /* Styles for Desktop devices */
@@ -29,6 +29,6 @@
     padding-right: 64px;
   }
   .section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
