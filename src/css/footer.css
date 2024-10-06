@@ -5,14 +5,10 @@
   min-height: 100px;
   margin-top: 50px;
   padding-bottom: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 
 .footer-contacts-holder {
-  padding-bottom: 40px;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .footer-contacts-holder {
@@ -30,8 +26,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .footer-contacts-holder {
-  }
 }
 .footer-address {
   padding-top: 20px;
@@ -71,30 +65,18 @@
 .social-icon-footer {
   position: relative;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* margin: 10px 0;
-  flex-wrap: wrap; */
   fill: #ffffff;
 }
 .menu {
   padding-top: 40px;
   padding-bottom: 40px;
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-  fill: #ffffff; */
 }
 @media screen and (min-width: 768px) {
   .menu {
     padding-top: 0;
   }
 }
-
 @media screen and (min-width: 1280px) {
 }
 
@@ -131,7 +113,6 @@
 .menu__link {
   font-size: 1.2rem;
   color: #fff;
-  /* margin: 0 10px; */
   display: inline-block;
   transition: 0.5s;
   text-decoration: none;
@@ -149,10 +130,13 @@
   font-size: 1rem;
   font-weight: 300;
 }
+.footer-copy {
+  padding-bottom: 20px;
+}
 
 .wave {
   position: absolute;
-  top: -100px;
+  top: -99px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -186,22 +170,4 @@
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
-}
-
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
 }
