@@ -28,6 +28,9 @@
   position: relative;
   display: inline-block;
 }
+.logo-accent-light {
+  color: var(--c-white);
+}
 
 .logo-accent::after {
   content: '';
