@@ -90,7 +90,7 @@
 /* Button inside the plan */
 .plan-button {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 156%;
   padding: 16px 39px;
   background-color: var(--c-green);

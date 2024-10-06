@@ -10,9 +10,11 @@
 @import url('./container.css');
 @import url('./animations.css');
 @import url('./effects.css');
+@import url('./fonts.css');
 
 /* Sections style */
 @import url('./header.css');
+@import url('./hero.css');
 @import url('./lesson.css');
 @import url('./about.css');
 @import url('./badges.css');
