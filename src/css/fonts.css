@@ -53,3 +53,43 @@
     line-height: 167%;
   }
 }
+
+.font-footer-main {
+  /* font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+
+  color: var(--c-white); */
+
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.font-footer-main:hover {
+  opacity: 1;
+}
+
+.font-footer-add {
+  /* font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+
+  color: var(--c-white); */
+
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 200;
+  opacity: 0.4;
+}
+
+.font-footer-copy {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 200;
+  opacity: 0.5;
+}
